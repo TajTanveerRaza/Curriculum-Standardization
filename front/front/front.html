@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<style>
+			.navbar 
+			{
+				background-color: #65B2DC;
+				border: 3;
+				border-radius: 0;
+				opacity: 0.9;
+			}
+			#id1
+			{
+				font-weight:bold;				
+				color:black;
+			}
+			#intro
+			{
+				background-color: #007399;
+				color:WHITE;
+			}
+			#about
+			{
+				background-color: #3973ac;
+			}
+			#services
+			{
+				background-color:#707E99;
+			}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+@keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
+		</style>
+	</head>
+	<body data-spy="scroll" data-target=".navbar">
+		<nav class="navbar navbar-default navbar-fixed-top navbar">
+  			<div class="container-fluid">
+    				<div class="navbar-header">
+    					<a class="navbar-brand" href="#" id="id1">AICTE</a>
+    				</div>
+				<ul class="nav navbar-nav">
+					<li><a href="#about" id="id1">About</a></li>
+					<li><a href="#services" id="id1">Services</a></li>
+				</ul>
+    				<ul class="nav navbar-nav navbar-right">
+      					<li><a href="course.html" id="id1">Let's Standardize <span class="glyphicon glyphicon-user"></span></a></li>
+					<li><a href="index.html" id="id1">Login <span class="glyphicon glyphicon-log-in"></span></a></li>
+    				</ul>
+  			</div>
+		</nav>
+		<div class="jumbotron text-center" id="intro"><br><br>
+			<h1><img src="aicte home.png" class="img-circle" height="250"></img>
+			<h2>STANDARDIZING CURRICULUM</h2>
+		</div>
+		<div class="jumbotron" id="about">
+			<div class="container-fluid">	
+				<div class="row slideanim">
+					<div class="col-sm-1"><p style="font-size:30px"><kbd>Mission</kbd></p></div>
+					<div class="col-sm-8"><p style="font-size:20px">AICTE approved courses in the field of Engineering and Technology, Management, Pharmacy, Architecture etc are affiliated to different Universities and are conducted as per the syllabus prescribed by these Universities. There are more than 100 such universities in the Country affiliating the same course(s). However, the structure of the course, content and scheme of the course differs widely from University to University, resulting in variation in the academic standards of the same degree approved by AICTE at the time of admission to higher studies and employment in India and abroad. Therefore our service helps to resolve this issue by mapping structure, content and scheme of the courses at present run by affiliated Universities and map important features and compare with a standard curriculum of highest standard. This would help AICTE to develop and enforce uniform academic standards all over the country for all its approved Courses.</p></div>
+					<div class="col-sm-3"><img src="books.jpg" width="100%" height="230"></div>
+				</div><br><br>
+				<center><button type="button" class="btn btn-danger"><h2>Join Now!</h2></button></center><br><br>
+			</div>
+		</div>
+		<div id="services" class="jumbotron text-center">
+			<div class="container-fluid">
+				<h2>Services</h2><br>
+				<div class="row slideanim" align="left">
+					<div class="col-sm-3"><h4><span class="glyphicon glyphicon-hand-right"></span> <kbd>Content, Scheme and Structure Mapping</kbd></h4></div>
+					<div class="col-sm-9"><h4>Our application maps the content, scheme and structure of your given University curriculum to the standard curriculum of the highest standard.</h4></div>
+				</div>
+				<div class="row slideanim" align="left">
+					<div class="col-sm-3"><h4><span class="glyphicon glyphicon-hand-right"></span> <kbd>Syllabus comparison</kbd></h4></div>
+					<div class="col-sm-9"><h4>After mapping the content, scheme and structure, our application compares the syllabus of your given University curriculum to the standard curriculum</h4></div>
+				</div>
+				<div class="row slideanim" align="left">
+					<div class="col-sm-3"><h4><span class="glyphicon glyphicon-hand-right"></span> <kbd>Syllabus Approval</kbd></h4></div>
+					<div class="col-sm-9"><h4>After comparing the syllabus of your given university with that of the common curriculum of the highest standard, we give the conclusion based on the minimum percentage of the syllabus matching with the common curriculum. If it passes that minimum percentage, the syllabus of your university will be appproved.</h4></div>
+				</div>
+				<div class="row slideanim" align="left">
+					<div class="col-sm-3"><h4><span class="glyphicon glyphicon-hand-right"></span> <kbd>Suggestions</kbd></h4></div>
+					<div class="col-sm-9"><h4>We also give you suggestions of important topics or chapters that you may have missed out or may want to include in your curriculum</h4></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

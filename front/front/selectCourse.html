@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<title>Select Branch</title>
+<style type="text/css">
+    ul{
+        padding: 0;
+        list-style: none;
+        background: #f2f2f2;
+    }
+    ul li{
+        display: inline-block;
+        position: relative;
+        line-height: 21px;
+        text-align: left;
+    }
+    ul li a{
+        display: block;
+        padding: 8px 25px;
+        color: #333;
+        text-decoration: none;
+    }
+    ul li a:hover{
+        color: #fff;
+        background: #939393;
+    }
+    ul li ul.dropdown{
+        min-width: 100%; /* Set width of the dropdown */
+        background: #f2f2f2;
+        display: none;
+        position: absolute;
+        z-index: 999;
+        left: 0;
+    }
+    ul li:hover ul.dropdown{
+        display: block;	/* Display the dropdown */
+    }
+    ul li ul.dropdown li{
+        display: block;
+    }
+    .center { text-align: center;}
+    
+</style>
+</head>
+<body background="http://fullhdpictures.com/wp-content/uploads/2016/02/Hexagons-Backgrounds.jpg">
+<h1><font color="White"><center>Select the course</center></font></h1>
+    <ul class="center">
+        <li>
+	    <a href="CseImg.html" target="SelectSub">CSE &#9662;</a>
+		<ul class="dropdown">
+                	<li><a href="CseSemSubs.html" target="SelectSem">Display Syllabus</a></li>
+                	<li><a href="#">Latest Technology</a></li>
+            	</ul>
+        </li>
+        <li>
+            <a href="EceImage.html" target="SelectSub">ECE &#9662;</a>
+            <ul class="dropdown">
+                <li><a href="EceSemSub.html" target="SelectSem">Display Syllabus</a></li>
+                <li><a href="#">Latest Technology</a></li>
+            </ul>
+        </li>
+	<li>
+            <a href="mechImg.html" target="SelectSub">MECH &#9662;</a>
+            <ul class="dropdown">
+                <li><a href="MechSemSubs.html" target="SelectSem">Display Syllabus</a></li>
+                <li><a href="#">Latest Technology</a></li>
+            </ul>
+        </li>
+	<li>
+            <a href="ITImg.html" target="SelectSub">IT &#9662;</a>
+            <ul class="dropdown">
+                <li><a href="ItSemSubs.html" target="SelectSem">Display Syllabus</a></li>
+                <li><a href="#">Latest Technology</a></li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>      
